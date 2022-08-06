@@ -1,0 +1,24 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "A task manager built with Node/Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "build-css": "tailwindcss -i src/styles.css -o public/styles.css --watch",
+    "watch": "watch \"npm run build-css\""
+  },
+  "author": "Danita Codes",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.1",
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "nodemon": "^2.0.19",
+    "watch": "^1.0.2"
+  }
+}
